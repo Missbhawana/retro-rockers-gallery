@@ -7,65 +7,88 @@
     
    <style>
     body {
-        margin:20px;
+        margin: 20px;
         font-family: Arial, Helvetica, sans-serif;
         padding-left: 300px; 
     }
+
     header {
         background-color: pink;
         text-align: center;
-        padding:15px;
+        padding: 15px;
     }
+
     .sidebar1 {
-        width:200px;
+        width: 200px;
         background: black;
-        color:white;
-        height:100vh;
-        padding:15px;
-        position:fixed;
-        top:0;
-        left:0;
+        color: white;
+        height: 100vh;
+        padding: 15px;
+        position: fixed;
+        top: 0;
+        left: 0;
     }
+
     .sidebar {
-        color:white;
-        padding:10px;
+        color: white;
+        padding: 10px;
         text-decoration: none;
     }
+
     .sidebar1 a {
-        display:block;
-        color:white;
-        text-decoration:none;
-        padding:8px 0;
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 8px 0;
     }
+
     .sidebar1 a:hover {
-        color:yellow;
+        color: yellow;
     }
+
     .oops {
-        margin:40px;
-        padding:20px;
-        border:2px solid black;
+        background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092') center/cover no-repeat;
+        color: white;
+       
+        margin: 90px;
+        padding: 100px;
+        border: 2px solid black;
         text-align: center;
     }
+
+    
+    .specials-container {
+        display: flex;          
+        flex-wrap: wrap;         
+        gap: 20px;              
+        justify-content: center;  
+        margin: 40px;
+    }
+
     .pizza {
-        padding:15px;
-        margin:40px;
+        flex: 0 0 300px;         
+        padding: 15px;
         border: 2px solid black;
         text-align: center;
         border-radius: 8px;
-        max-width: 350px;
     }
-    
+
     .pizza img {
-        width: 100%;          
-        max-height: 200px;    
-        object-fit: cover;    
-        border-radius: 8px;   
-        margin-bottom: 10px;  
+        width: 100%;
+        max-height: 200px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        text-align: center;
+        margin: 20px;
     }
    </style>
 </head>
 <body>
-    <header><h1>Shivam's Dhaba</h1></header>
+    <header><h1>My resturant</h1></header>
 
     <div class="sidebar1">
         <h2 class="sidebar">Menu</h2>
@@ -78,33 +101,33 @@
     </div>
 
     <div class="oops">
-        <h1>Our Specials</h1>
+        <h1>Walcome to my resturant </h1>
+        <p>live well,eat well </p>
     </div>
 
     
-    <div class="pizza">
-        <img src="https://images.unsplash.com/photo-1594007654729-407eedc4be65?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=60" alt="Margherita Pizza">
-        <h2>Margherita Pizza</h2>
-        <p>Classic pizza with fresh tomatoes, mozzarella cheese, and basil leaves.</p>
-    </div><div class="pizza">
-        <img src="https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=60" alt="Paneer Butter Masala">
-        <h2>Paneer Butter Masala</h2>
-        <p>Creamy tomato gravy cooked with soft paneer cubes and Indian spices.</p>
+    <div class="specials-container">
+        <div class="pizza">
+            <img src="https://images.unsplash.com/photo-1594007654729-407eedc4be65?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=60" alt="Margherita Pizza">
+            <h2>Margherita Pizza</h2>
+            <p>Classic pizza with fresh tomatoes, mozzarella cheese, and basil leaves.</p>
+        </div>
+
+        <div class="pizza">
+            <img src="https://myfoodstory.com/wp-content/uploads/2021/10/Paneer-Butter-Masala-1-2.jpg" alt="Paneer Butter Masala">
+            <h2>Paneer Butter Masala</h2>
+            <p>Creamy tomato gravy cooked with soft paneer cubes and Indian spices.</p>
+        </div>
+
+        <div class="pizza">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=600&q=60" alt="Chocolate Brownie">
+            <h2>Chocolate Brownie</h2>
+            <p>Rich chocolate brownie served with a scoop of vanilla ice cream.</p>
+        </div>
     </div>
-    <div class="pizza">
-    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=600&q=60" alt="Chocolate Brownie">
-    <h2>Chocolate Brownie</h2>
-    <p>Rich chocolate brownie served with a scoop of vanilla ice cream.</p>
-</div>
 
-
-
-
-
-
-    <footer style="text-align:center; margin:20px;">
+    <footer>
         <p>© 2025 Shivam Roy! All Rights Reserved</p>
     </footer>
 </body>
 </html>
-
